@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300&family=Lora:ital,wght@0,500;1,700&family=Montserrat&display=swap');
+
+
+*{
+font-family: 'Crimson Pro';
+font-family: 'Lora';
+font-family: 'Montserrat';
+padding: 0;
+margin: 0;
+vertical-align: baseline;
+list-style: none;
+border: 0;
+text-decoration: none;
+background-color: #181719;
+}
+
+
+
+
+/*Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 2em;
+}
+
+.logo{
+    box-sizing: border-box;
+    border: 2px solid white;
+}
+    
+
+.logo__texto{
+    font-family: 'Crimson Pro';
+    font-size: 14px;
+    font-weight: 200;
+    color: white;
+    padding: 6px;
+} 
+
+.cabecalho{
+    position: relative;
+    right: 50px;
+}
+
+
+.cabecalho__menu{
+    font-family: 'Montserrat';
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-weight: 700;
+    list-style: none;
+    gap: 50px;
+    
+}
+
+.cabecalho__texto{
+    text-decoration: none;
+    color:whitesmoke
+}
+
+.cabecalho__texto:hover{
+    text-decoration: underline;
+}
+
+
+/* Main */
+
+
+.container{
+    display: inline-block;
+     padding: 3%;
+    align-items: center;
+    position: absolute;
+    top: 300px;
+}
+
+
+.container__titulo{
+    font-family: 'Lora';    
+    font-weight: 500;
+    color: white;
+    margin-bottom: 1em;
+}
+
+.container__texto{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: white;
+    width: 410px;
+    height: 145px;
+    left: 77px;
+    top: 482px;
+
+
+    
+}
+
+.botao{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: white;
+}
+
+.container__imagem{
+    display: flex;
+    width: 821.11px;
+    height: 586.53px;
+    left: 10%;      
+    bottom: 1px;
+    top: 90px;
+}
+
+.bg{
+    position: absolute;
+    width: 821.11px;
+    height: 586.53px;
+    left: 1000px;
+    top: 221px;
+    
+}
+
+.box{
+    position: absolute;
+    width: 470px;
+    height: 189px;
+    left: 1300px;
+    top: 722px;;
+    background: #181719; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
+
+ .box__name{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+    position: absolute;
+    width: 95px;
+    height: 17px;
+    left: 100px;
+    top: 16px;
+ }
+
+ .box__info{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 12px;
+    
+
+ }
+
+ .box__info h1{
+    position: absolute;
+    font-weight: 300;
+    color: white;
+    font-size: 14px;
+    left: 100px;
+    top: 25px;
+
+ }
+
+ .box__info h6{
+    font-family: 'Montserrat';
+    font-weight: 200;
+    position: absolute;
+    color: #828282;
+    font-size: 12px;
+    left: 100px;
+    top: 50px;
+ }
+
+ .box__info p{
+    font-family: 'Lora';
+    font-weight: 700;
+    position: absolute;
+    color: white;
+    left: 50px;
+    top: 100px;
+    font-size: 30px; 
+
+ }
+    
+
+
+
+.card{
+    position: absolute;
+    background: transparent;
+    width: 49px;
+    height: 49px;
+    left: 1335px;
+    top: 740px;
+    border-radius: 50%;
+    background-image: url(/img/photo2.png);
+    background-position: 0px;
+    background-size: 49px;
+    background-repeat:no-repeat;
+    
+}
+
+/*Rodapé?*/
+
+
+.rodape{
+    position: absolute;
+width: 287px;
+height: 17px;
+left: 800px;
+top: 899px;
+padding: 10px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+
+/* identical to box height */
+text-align: center;
+
+color: #A9A9A9;
+
+
+}
+
+
+/* animação Read More */
+.cta {
+    border: none;
+    background: none;
+  }
+  
+  .cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;
+  }
+  
+  .cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+  }
+  
+  .cta:hover svg {
+    transform: translateX(0);
+  }
+  
+  .cta:active svg {
+    transform: scale(0.9);
+  }
+  
+  .hover-underline-animation {
+    position: relative;
+    color: white;
+    padding-bottom: 20px;
+  }
+  
+  .hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
